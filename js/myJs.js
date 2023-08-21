@@ -1,17 +1,29 @@
 const textConfig = {
   text1: "Hallo chị!!!",
-  text2: "em có điều này muốn nói, chị nhớ phải trả lời thật lòng nhaaa.",
+  text2: "em có điều này muốn nói với chị",
+  text2a: "Em với chị cùng biết nhau được một khoảng thời gian rồi",
+  text2b:
+    "Thời gian 3 tháng cũng không dài, có vui cũng có buồn, có giận dỗi cũng có sự quan tâm yêu thương.",
+  text2c:
+    "Trãi qua mối ngày như vậy thì tình cảm trong em đối với chị ngày một lớn hơn và em càng không thể tự kiềm chế được mà càng thích chị hơn.",
+  text2d:
+    "Trong thời gian đó, em cũng đã nhiều lần khiến chị không vui, bực mình vì sự vô tri của bản thân",
+  text2e:
+    "Hiện tại em đã nhận ra những sai sót của bản thân và đang cố gắng để thay đổi tốt hơn từng ngày.",
+  text2f: "Nay nhân ngày thất tịch em có điều này muốn nói với chị",
   text3: "Em thật sự rất thích chị, nên là...",
-  text3b: "Chị đồng ý làm người yêu của em nha <3",
+  text3b: "Chị đồng ý làm người yêu của em nha!!!!",
+  text3c:
+    "Em hứa từ nay sẽ luôn làm cho chị vui vẻ, sẽ không làm nhưng điều khiến chị không vui và bực mình nữa.",
   text4:
-    "Nếu chị ko trả lời mà thoát ra tức là muốn làm người yêu của em rùi đó nha :v",
+    "Nếu chị ko trả lời mà thoát ra tức là muốn làm người yêu của em rùi đó nha :3",
   text5: "Honggg",
   text6: "Cóoooooo ",
   text7: "Viết gì đó cho em đi",
   text8: "Gửi cho em <3",
-  text9: "",
+  text9: "Vì em deptry :3",
   text10: "em biết mà ^^ Yêu chị 300.000",
-  text11: "<3 <3 <3",
+  text11: "Qua discord trả lời em nhé",
   text12: "oke nè <3",
 };
 
@@ -19,6 +31,7 @@ $(document).ready(function () {
   // process bar
   setTimeout(function () {
     firstQuestion();
+    // secondQuestion();
     $(".spinner").fadeOut();
     $("#preloader").delay(350).fadeOut("slow");
     $("body").delay(350).css({
@@ -26,8 +39,11 @@ $(document).ready(function () {
     });
   }, 600);
 
+  secondQuestion();
+
   $("#text3").html(textConfig.text3);
   $("#text3b").html(textConfig.text3b);
+  $("#text3c").html(textConfig.text3c);
 
   $("#text4").html(textConfig.text4);
   $("#no").html(textConfig.text5);
@@ -38,6 +54,102 @@ $(document).ready(function () {
     Swal.fire({
       title: textConfig.text1,
       text: textConfig.text2,
+      imageUrl: "img/cheemsXinChao.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestion();
+    });
+  }
+
+  function secondQuestion() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2a,
+      imageUrl: "img/cheemsXinChao.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestionb();
+    });
+  }
+
+  function secondQuestionb() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2b,
+      imageUrl: "img/cheemsXinChao.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestionc();
+    });
+  }
+
+  function secondQuestionc() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2c,
+      imageUrl: "img/cheemsXinChao.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestiond();
+    });
+  }
+
+  function secondQuestiond() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2d,
+      imageUrl: "img/meoxinloi.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestione();
+    });
+  }
+
+  function secondQuestione() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2e,
+      imageUrl: "img/cheemsCaiThien.jpg",
+      imageWidth: 300,
+      imageHeight: 300,
+      background: '#fff url("img/iput-bg.jpg")',
+      imageAlt: "Custom image",
+    }).then(function () {
+      $(".content").show(200);
+      secondQuestionf();
+    });
+  }
+
+  function secondQuestionf() {
+    $(".content").hide();
+    Swal.fire({
+      // title: textConfig.text1,
+      text: textConfig.text2f,
       imageUrl: "img/cheemsXinChao.jpg",
       imageWidth: 300,
       imageHeight: 300,
@@ -113,38 +225,15 @@ $(document).ready(function () {
     var audio = new Audio("sound/tick.mp3");
     audio.play();
     Swal.fire({
-      title: textConfig.text7,
-      html: true,
       width: 900,
-      padding: "3em",
-      html: "<input type='text' class='form-control' id='txtReason'  placeholder='Whyyy'>",
+      confirmButtonText: textConfig.text12,
       background: '#fff url("img/iput-bg.jpg")',
-      backdrop: `
-                    rgba(0,0,123,0.4)
-                    url("img/giphy2.gif")
-                    left top
-                    no-repeat
-                  `,
-      showCancelButton: false,
-      confirmButtonColor: "#3085d6",
-      cancelButtonColor: "#d33",
-      confirmButtonColor: "#fe8a71",
-      cancelButtonColor: "#f6cd61",
-      confirmButtonText: textConfig.text8,
-    }).then((result) => {
-      if (result.value) {
-        Swal.fire({
-          width: 900,
-          confirmButtonText: textConfig.text12,
-          background: '#fff url("img/iput-bg.jpg")',
-          title: textConfig.text10,
-          text: textConfig.text11,
-          confirmButtonColor: "#83d0c9",
-          onClose: () => {
-            window.location = "http://fb.com";
-          },
-        });
-      }
+      title: textConfig.text10,
+      text: textConfig.text11,
+      confirmButtonColor: "#83d0c9",
+      onClose: () => {
+        window.location = "https://discord.com/channels/@me/887985085918351370";
+      },
     });
 
     $("#txtReason").focus(function () {
