@@ -1,6 +1,6 @@
 const textConfig = {
   text1: "Hallo chị!!!",
-  text2: "em có điều này muốn nói với chị",
+  text2: "Em có điều này muốn nói với chị",
   text2a: "Em với chị cùng biết nhau được một khoảng thời gian rồi",
   text2b:
     "Thời gian 3 tháng cũng không dài, có vui cũng có buồn, có giận dỗi cũng có sự quan tâm yêu thương.",
