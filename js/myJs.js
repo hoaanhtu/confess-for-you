@@ -1,6 +1,6 @@
 const textConfig = {
   text1: "Hallo chị!",
-  text2: "Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.",
+  text2: "em có điều này muốn nói, chị nhớ phải trả lời thật lòng nhaaa.",
   text3: "Em thật sự rất thích chị, nên là...",
   text3b: "Chị đồng ý làm người yêu của em nha <3",
   text4:
@@ -38,7 +38,7 @@ $(document).ready(function () {
     Swal.fire({
       title: textConfig.text1,
       text: textConfig.text2,
-      imageUrl: "img/cuteCat.jpg",
+      imageUrl: "img/cheemsXinChao.jpg",
       imageWidth: 300,
       imageHeight: 300,
       background: '#fff url("img/iput-bg.jpg")',
