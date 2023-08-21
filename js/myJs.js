@@ -1,5 +1,9 @@
 const textConfig = {
+<<<<<<< HEAD
   text1: "Hallo chị!",
+=======
+  text1: "Hallo chị!!!",
+>>>>>>> 7860963e704eb13fe808c2d9d3e29e0656fad304
   text2: "em có điều này muốn nói, chị nhớ phải trả lời thật lòng nhaaa.",
   text3: "Em thật sự rất thích chị, nên là...",
   text3b: "Chị đồng ý làm người yêu của em nha <3",
