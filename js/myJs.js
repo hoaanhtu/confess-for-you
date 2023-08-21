@@ -5,7 +5,7 @@ const textConfig = {
   text2b:
     "Thời gian 3 tháng cũng không dài, có vui cũng có buồn, có giận dỗi cũng có sự quan tâm yêu thương.",
   text2c:
-    "Trãi qua mối ngày như vậy thì tình cảm trong em đối với chị ngày một lớn hơn và em càng không thể tự kiềm chế được mà càng thích chị hơn.",
+    "Trải qua mỗi ngày như vậy thì tình cảm trong em đối với chị ngày một lớn hơn và em càng không thể tự kiềm chế được mà càng thích chị hơn.",
   text2d:
     "Trong thời gian đó, em cũng đã nhiều lần khiến chị không vui, bực mình vì sự vô tri của bản thân",
   text2e:
